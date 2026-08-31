@@ -1,0 +1,12 @@
+{
+    "name": "Flask Auth Workshop",
+    "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    "postCreateCommand": "pip install flask",
+    "forwardPorts": [5003],
+    "portsAttributes": {
+        "5003": {
+            "label": "Flask Menu App",
+            "onAutoForward": "openBrowser"
+        }
+    }
+}
