@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OGCE</title>
+    </head>
+    <link rel="stylesheet" href="websitestyle.css">
+    <body>
+        <header>
+            <div id="container">
+                <div id="Home" class="box" style="color: rgb(222, 245, 198);">Home</div>
+                <div id="Legacy" class="box" style="color: rgb(222, 245, 198);">Legacy</div>
+                <div id="Programme" class="box" style="color: rgb(222, 245, 198);">
+                    Programme
+                    <div class="dropdown">
+                        <div><a href="#">Undergraduate</a></div>
+                        <div><a href="#">Postgraduate</a></div>
+                    </div>
+                </div>
+                <div id="Departments" class="box" style="color: rgb(222, 245, 198);">
+                    Departments
+                    <div class="dropdown">
+                        <div><a href="#">Computer Science</a></div>
+                        <div><a href="#">Electronics</a></div>
+                        <div><a href="#">Mechanical</a></div>
+                    </div>
+                </div>
+                <div id="Admissions" class="box" style="color: rgb(222, 245, 198);">Admissions</div>
+                <div id="Gallery" class="box" style="color: rgb(222, 245, 198);">
+                    Gallery
+                    <div class="dropdown">
+                        <div><a href="#">18-19</a></div>
+                        <div><a href="#">19-20</a></div>
+                        <div><a href="#">20-21</a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="welcome-section">
+
+
+             <div class="welcome-logo">
+                 <img src="logo.jpeg" alt="Logo" height="200" width="200">
+             </div>
+             <div class="welcome-text">
+                <p>
+                 OGCE is a premier institution that offers a wide range of programs and opportunities<br>
+                for students to excel in their chosen fields. Our legacy of excellence and commitment<br>
+                to innovation makes us a top choice for aspiring professionals.
+                </p>
+
+                <!-- Hidden text, JavaScript shows and hides this -->
+                <p id="moreText" class="more-text">
+                 The college has well equipped laboratories, an experienced faculty and an active<br>
+                placement cell. Students are encouraged to take part in technical clubs, sports<br>
+                and cultural events throughout the academic year.
+                </p>
+
+                <button id="readMoreBtn" class="read-btn" onclick="toggleText()">Read More</button>
+             </div>
+            <div class="welcome-text">
+                <h1>
+                Welcome<br>
+                To OGCE
+                </h1>
+
+                <!-- JavaScript writes the greeting here -->
+                <p id="greeting" class="greeting"></p>
+            </div>
+
+        </section>
+
+
+        <section class="college-gallery">
+
+            <h2>Our Campus</h2>
+
+             <div class="gallery-container">
+
+                 <img src="college1.jpeg" alt="College Campus" onclick="showCaption('Our Main Campus')">
+
+                  <img src="college2.jpeg" alt="College Building" onclick="showCaption('The Academic Block')">
+
+                  <img src="college3.jpeg" alt="College Facilities" onclick="showCaption('Our Campus Facilities')">
+
+             </div>
+
+             <!-- JavaScript writes the caption here -->
+             <p id="caption" class="caption">Click on a picture to know more</p>
+
+        </section>
+
+
+        <footer class="footer">
+
+
+            <div class="footer-column">
+
+                <h3>Useful Links</h3>
+
+              <a href="#"> FAQs</a>
+
+               <a href="#"> Resources</a>
+
+               <a href="#"> Admissions</a>
+
+               <a href="#"> Academic Calendar</a>
+
+               <a href="#"> Departments</a>
+
+            </div>
+
+
+    <!-- Quick Links Column -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="#">About OGCE</a>
+
+                <a href="#">Gallery</a>
+
+                <a href="#">Contact Us</a>
+
+                <a href="#">Faculty</a>
+
+            </div>
+
+
+    <!-- Contact Column -->
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p>📍 OGCE Campus</p>
+
+                <p>📞 +91 XXXXX XXXXX</p>
+
+                <p>✉️ info@ogce.edu</p>
+
+                <!-- JavaScript writes the year here -->
+                <p>© <span id="year"></span> OGCE</p>
+
+            </div>
+
+        </footer>
+
+        <script src="WebScript.js"></script>
+    </body>
+</html>
